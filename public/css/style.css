@@ -481,7 +481,8 @@ p a {
 
 p .text-width-1 {
 	display: inline-block;
-	max-width: 730px;
+	max-width: 90%;
+	margin:auto;
 }
 
 .text-width-2 {
@@ -717,6 +718,7 @@ a[href*='tel'], a[href*='mailto'] {
 }
 
 @media (max-width: 575.98px) {
+	
 	.box-minimal {
 		max-width: 360px;
 		margin-left: auto;
@@ -4614,7 +4616,9 @@ html:not(.tablet):not(.mobile)[data-x-mode='true'] .thumbnail-corporate:hover .t
 }
 
 .thumbnail-light-image {
-	width: 100%;
+	height:250px;
+	width:100%;
+	object-fit: cover;
 }
 
 @media (max-width: 575.98px) {
@@ -18131,4 +18135,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	justify-content:center;
 	align-items: center;
 	height:100%;
+}
+@media only screen and (max-width: 900px) {
+	.imgimg{
+		display:none;
+	}
 }

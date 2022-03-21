@@ -23,10 +23,10 @@ app.post('/joinform', (req, res) => {
         }
     });
     let mailOptions1 = {
-        from: 'rupinvijan@gmail.com', 
-        to: `rupinvijan@gmail.com `, 
+        from: 'info.borrowonyourhome@gmail.com', 
+        to: `info.borrowonyourhome@gmail.com `, 
         subject: 'Join Now form response',
-        html: `<h2>We will contact you as soon as possible! Thanks for your interest!</h2> <br><br>  <p>First-Name: ${req.body['first-name']} <br> Last-Name: ${req.body['last-name']} <br> Email: ${req.body.email}<br>  Phone Number : ${req.body.phone} <br> Loan Range: ${req.body['loan-range']} <br>Credit Score: ${req.body.CreditScore} <br> Location: ${req.body.location} <br> privateLandingRequired: ${req.body.privateLandingRequired} </p> `
+        html: `<h2> Thanks for your interest!</h2>   <p>First-Name: ${req.body['first-name']} <br> Last-Name: ${req.body['last-name']} <br> Email: ${req.body.email}<br>  Phone Number : ${req.body.phone} <br> Loan Range: ${req.body['loan-range']} <br>Credit Score: ${req.body.CreditScore} <br> Location: ${req.body.location} <br> privateLandingRequired: ${req.body.privateLandingRequired} </p> `
     };
     transporter1.sendMail(mailOptions1, (err, data) => {
         if (err) {
@@ -48,10 +48,10 @@ app.post('/contactform', (req, res) => {
         }
     });
     let mailOptions1 = {
-        from: 'rupinvijan@gmail.com', 
-        to: `rupinvijan@gmail.com `, 
+        from: 'info.borrowonyourhome@gmail.com', 
+        to: `info.borrowonyourhome@gmail.com `, 
         subject: 'Contact form response',
-        html: `<h2>We will contact you as soon as possible! Thanks for your interest!</h2> <br><br>  <p>First-Name: ${req.body['first-name']} <br> Last-Name: ${req.body['last-name']} <br> Email: ${req.body.email}<br>  Phone Number : ${req.body.phone} <br> Message: ${req.body.message}  </p> `
+        html: `<h2> Thanks for your interest!</h2>  <p>First-Name: ${req.body['first-name']} <br> Last-Name: ${req.body['last-name']} <br> Email: ${req.body.email}<br>  Phone Number : ${req.body.phone} <br> Message: ${req.body.message}  </p> `
     };
     transporter1.sendMail(mailOptions1, (err, data) => {
         if (err) {
